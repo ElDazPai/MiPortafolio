@@ -1,0 +1,395 @@
+<div class="certificates-wrapper" id="certificados">
+  <div class="container">
+    <div class="section-header text-center mb-5">
+      <h2 class="fw-bold">
+        <i class="bi bi-award-fill me-2"></i>
+        Certificados y Logros
+      </h2>
+    </div>
+    
+    <div class="certificates-container">
+      <button class="nav-button prev-button" (click)="scrollLeft()">
+        <i class="bi bi-chevron-left"></i>
+      </button>
+
+      <div class="certificates-scroll" #certificatesScroll>
+
+         <!-- Card 1 -->
+         <div class="certificate-card">
+          <div class="card-image">
+            <img src="./senaTecnico.png " alt="senaTecnico">
+          </div>
+          <div class="card-content">
+            <h3>Tecnico en Programacion De Software</h3>  
+            <p class="institution">SENA</p>
+            <p class="description">Programacion orientada a objetos, bases de datos, desarrollo web, entre otros</p>
+            <a href="javascript:void(0)" class="verify-link" (click)="downloadImage('./senaTecnico.png', 'Tecnico en Programacion De Software')">
+              <i class="bi bi-download"></i>
+              Descargar
+            </a>
+          </div>
+        </div>
+
+
+           <!-- Card 2 -->
+           <div class="certificate-card">
+            <div class="card-image">
+              <img src="./senaJava.png " alt="senaJava">
+            </div>
+            <div class="card-content">
+              <h3>Java Fundamentals</h3>  
+              <p class="institution">SENA</p>
+              <p class="description">Programacion orientada a objetos, bases de datos, entre otros</p>
+              <a href="javascript:void(0)" class="verify-link" (click)="downloadImage('./senaJava.png', 'Java Fundamentals')">
+                <i class="bi bi-download"></i>
+                Descargar
+              </a>
+            </div>
+          </div>
+
+
+          <!-- Card 3 -->
+          <div class="certificate-card">
+            <div class="card-image">
+              <img src="./senaWeb.png " alt="senaWeb">
+            </div>
+            <div class="card-content">
+              <h3>Diseño Web HTML, CSS, JavaScript</h3>  
+              <p class="institution">SENA</p>
+              <p class="description">Diseño web, HTML, CSS, JavaScript, entre otros</p>
+              <a href="javascript:void(0)" class="verify-link" (click)="downloadImage('./senaWeb.png', 'Diseño Web HTML, CSS, JavaScript')">
+                <i class="bi bi-download"></i>
+                Descargar
+              </a>
+            </div>
+          </div>
+
+
+            <!-- Card 4 -->
+            <div class="certificate-card">
+              <div class="card-image">
+                <img src="./senaFormacion.png " alt="senaFormacion">
+              </div>
+              <div class="card-content">
+                <h3>Formacion Profesional Integral</h3>  
+                <p class="institution">SENA</p>
+                <p class="description"></p>
+                <a href="javascript:void(0)" class="verify-link" (click)="downloadImage('./senaFormacion.png', 'Formacion Profesional Integral')">
+                  <i class="bi bi-download"></i>
+                  Descargar
+                </a>
+              </div>
+            </div>
+
+
+        <!-- Card 5 -->
+        <div class="certificate-card">
+          <div class="card-image">
+            <img src="./unirPython.png " alt="unirPython">
+          </div>
+          <div class="card-content">
+            <h3>Diplomado en Python</h3>  
+            <p class="institution">Universidad Internacional de La Rioja</p>
+            <p class="description">Dominio de Python, Flask, y arquitecturas modernas de backend</p>
+            <a href="javascript:void(0)" class="verify-link" (click)="downloadImage('./unirPython.png', 'Diplomado en Python')">
+              <i class="bi bi-download"></i>
+              Descargar
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="certificate-card">
+          <div class="card-image">
+            <img src="./angularBasico.png" alt="Angular Basico">
+          </div>
+          <div class="card-content">
+            <h3>Angular Basico</h3>
+            <p class="institution">OpenBootcamp</p>
+            <p class="description">Fundamentos y conceptos básicos del framework Angular</p>
+            <a href="javascript:void(0)" class="verify-link" (click)="downloadImage('./angularBasico.png', 'Angular Basico')">
+              <i class="bi bi-download"></i>
+              Descargar
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="certificate-card">
+          <div class="card-image">
+            <img src="./AngularExperto.png" alt="Angular Experto">
+          </div>
+          <div class="card-content">
+            <h3>Angular Experto</h3>
+            <p class="institution">Udemy</p>
+            <p class="description">Desarrollo avanzado y patrones de diseño en Angular</p>
+            <a href="javascript:void(0)" class="verify-link" (click)="downloadImage('./AngularExperto.png', 'Angular Experto')">
+              <i class="bi bi-download"></i>
+              Descargar
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="certificate-card">
+          <div class="card-image">
+            <img src="./MicrosoftFabric.png	" alt="Microsoft Fabric">
+          </div>
+          <div class="card-content">
+            <h3>Microsoft Fabric</h3>
+            <p class="institution">Udemy</p>
+            <p class="description">Análisis y gestión de datos con Microsoft Fabric</p>
+            <a href="javascript:void(0)" class="verify-link" (click)="downloadImage('./MicrosoftFabric.png', 'Microsoft Fabric')">
+              <i class="bi bi-download"></i>
+              Descargar
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="certificate-card">
+          <div class="card-image">
+            <img src="./AN1.png" alt="Automation Anywhere">
+          </div>
+          <div class="card-content">
+            <h3>Curso Oficial Automation Anywhere</h3>
+            <p class="institution">Automation Anywhere</p>
+            <p class="description">Fundamentos de automatización robótica de procesos (RPA)</p>
+            <a href="javascript:void(0)" class="verify-link" (click)="downloadImage('./AN1.png', 'Automation Anywhere 1')">
+              <i class="bi bi-download"></i>
+              Descargar
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="certificate-card">
+          <div class="card-image">
+            <img src="./AN2.png" alt="Automation Anywhere">
+          </div>
+          <div class="card-content">
+            <h3>Automation Anywhere</h3>
+            <p class="institution">Automation Anywhere</p>
+            <p class="description">Desarrollo avanzado de automatizaciones con RPA</p>
+            <a href="javascript:void(0)" class="verify-link" (click)="downloadImage('./AN2.png', 'Automation Anywhere 2')">
+              <i class="bi bi-download"></i>
+              Descargar
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="certificate-card">
+          <div class="card-image">
+            <img src="./AN3.png" alt="Automation Anywhere">
+          </div>
+          <div class="card-content">
+            <h3>Automation Anywhere</h3>
+            <p class="institution">Automation Anywhere</p>
+            <p class="description">Implementación de soluciones empresariales con RPA</p>
+            <a href="javascript:void(0)" class="verify-link" (click)="downloadImage('./AN3.png', 'Automation Anywhere 3')">
+              <i class="bi bi-download"></i>
+              Descargar
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="certificate-card">
+          <div class="card-image">
+            <img src="./Java.png" alt="Java Todo Code">
+          </div>
+          <div class="card-content">
+            <h3>Java Fundamentals</h3>
+            <p class="institution">Todo Code</p>
+            <p class="description">Programación orientada a objetos y fundamentos Java</p>
+            <a href="javascript:void(0)" class="verify-link" (click)="downloadImage('./Java.png', 'Java Fundamentals')">
+              <i class="bi bi-download"></i>
+              Descargar
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 13 -->
+        <div class="certificate-card">
+          <div class="card-image">
+            <img src="./Solid.png" alt="Principios SOLID">
+          </div>
+          <div class="card-content">
+            <h3>Principios SOLID</h3>
+            <p class="institution">Platzi</p>
+            <p class="description">Principios de diseño y arquitectura de software limpio</p>
+            <a href="javascript:void(0)" class="verify-link" (click)="downloadImage('./Solid.png', 'Principios SOLID')">
+              <i class="bi bi-download"></i>
+              Descargar
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 14 -->
+        <div class="certificate-card">
+          <div class="card-image">
+            <img src="./Arquitectura.png" alt="Arquitectura">
+          </div>
+          <div class="card-content">
+            <h3>Arquitectura De Software</h3>
+            <p class="institution">Platzi</p>
+            <p class="description">Patrones y prácticas de arquitectura de software moderna</p>
+            <a href="javascript:void(0)" class="verify-link" (click)="downloadImage('./Arquitectura.png', 'Arquitectura De Software')">
+              <i class="bi bi-download"></i>
+              Descargar
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 15 -->
+        <div class="certificate-card">
+          <div class="card-image">
+            <img src="./Diseño.png" alt="Diseño">
+          </div>
+          <div class="card-content">
+            <h3>Diseño Para Programadores</h3>
+            <p class="institution">Platzi</p>
+            <p class="description">Principios de diseño UI/UX para desarrolladores</p>
+            <a href="javascript:void(0)" class="verify-link" (click)="downloadImage('./Diseño.png', 'Diseño Para Programadores')">
+              <i class="bi bi-download"></i>
+              Descargar
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 16 -->
+        <div class="certificate-card">
+          <div class="card-image">
+            <img src="./responsive.png" alt="Responsive">
+          </div>
+          <div class="card-content">
+            <h3>Responsive Design</h3>
+            <p class="institution">Platzi</p>
+            <p class="description">Diseño web adaptativo y técnicas responsive modernas</p>
+            <a href="javascript:void(0)" class="verify-link" (click)="downloadImage('./responsive.png', 'Responsive Design')">
+              <i class="bi bi-download"></i>
+              Descargar
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 17 -->
+        <div class="certificate-card">
+          <div class="card-image">
+            <img src="./ANI.png" alt="Automation Anywhere">
+          </div>
+          <div class="card-content">
+            <h3>Automation Anywhere</h3>
+            <p class="institution">Platzi</p>
+            <p class="description">Integración de IA en automatizaciones RPA</p>
+            <a href="javascript:void(0)" class="verify-link" (click)="downloadImage('./ANI.png', 'Automation Anywhere IA')">
+              <i class="bi bi-download"></i>
+              Descargar
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 18 -->
+        <div class="certificate-card">
+          <div class="card-image">
+            <img src="./aws1.png" alt="AWS">
+          </div>
+          <div class="card-content">
+            <h3>Cloud Practitioner Essentials</h3>
+            <p class="institution">AWS</p>
+            <p class="description">Fundamentos básicos de la nube AWS y sus servicios principales</p>
+            <a href="javascript:void(0)" class="verify-link" (click)="downloadImage('./aws1.png', 'AWS Cloud Practitioner')">
+              <i class="bi bi-download"></i>
+              Descargar
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 19 -->
+        <div class="certificate-card">
+          <div class="card-image">
+            <img src="./aws2.png" alt="AWS">
+          </div>
+          <div class="card-content">
+            <h3>Job Roles in the Cloud</h3>
+            <p class="institution">AWS</p>
+            <p class="description">Roles y responsabilidades profesionales en el entorno cloud de AWS</p>
+            <a href="javascript:void(0)" class="verify-link" (click)="downloadImage('./aws2.png', 'AWS Job Roles')">
+              <i class="bi bi-download"></i>
+              Descargar
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 20 -->
+        <div class="certificate-card">
+          <div class="card-image">
+            <img src="./aws3.png" alt="AWS">
+          </div>
+          <div class="card-content">
+            <h3>AWS Cloud Adquisition</h3>
+            <p class="institution">AWS</p>
+            <p class="description">Proceso de adquisición y gestión de recursos en la nube de AWS</p>
+            <a href="javascript:void(0)" class="verify-link" (click)="downloadImage('./aws3.png', 'AWS Cloud Adquisition')">
+              <i class="bi bi-download"></i>
+              Descargar
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 21 -->
+        <div class="certificate-card">
+          <div class="card-image">
+            <img src="./aws4.png" alt="AWS">
+          </div>
+          <div class="card-content">
+            <h3>AWS Billing and Cost Management</h3>
+            <p class="institution">AWS</p>
+            <p class="description">Administración y optimización de costos en servicios AWS</p>
+            <a href="javascript:void(0)" class="verify-link" (click)="downloadImage('./aws4.png', 'AWS Billing')">
+              <i class="bi bi-download"></i>
+              Descargar
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 22 -->
+        <div class="certificate-card">
+          <div class="card-image">
+            <img src="./aws5.png" alt="AWS">
+          </div>
+          <div class="card-content">
+            <h3>AWS Well Architected Foundations</h3>
+            <p class="institution">AWS</p>
+            <p class="description">Principios y mejores prácticas para arquitecturas en AWS</p>
+            <a href="javascript:void(0)" class="verify-link" (click)="downloadImage('./aws5.png', 'AWS Well Architected')">
+              <i class="bi bi-download"></i>
+              Descargar
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 23 -->
+        <div class="certificate-card">
+          <div class="card-image">
+            <img src="./aws6.png" alt="AWS">
+          </div>
+          <div class="card-content">
+            <h3>AWS Cloud Essentials</h3>
+            <p class="institution">AWS</p>
+            <p class="description">Introducción a los aspectos esenciales de la nube AWS</p>
+            <a href="javascript:void(0)" class="verify-link" (click)="downloadImage('./aws6.png', 'AWS Cloud Essentials')">
+              <i class="bi bi-download"></i>
+              Descargar
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <button class="nav-button next-button" (click)="scrollRight()">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </div>
+</div>

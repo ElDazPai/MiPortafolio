@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#inicio" (click)="scrollTo('inicio')" style="cursor: pointer;">
+      <i class="bi bi-code-slash"></i> Developer
+    </a>
+    <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed" 
+            [attr.aria-expanded]="!isMenuCollapsed" aria-controls="navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" [class.show]="!isMenuCollapsed" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#inicio" (click)="scrollTo('inicio')">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#sobre-mi" (click)="scrollTo('sobre-mi')">Sobre Mí</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#educacion" (click)="scrollTo('educacion')">Educación</a>
+          
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#experiencia" (click)="scrollTo('experiencia')">Experiencia</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#certificados" (click)="scrollTo('certificados')">
+            <i class="bi bi-award-fill me-1"></i> Certificados
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#proyectos" (click)="scrollTo('proyectos')">Proyectos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contacto" (click)="scrollTo('contacto')">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,213 @@
+/* Variables del componente */
+:host {
+  --primary-color: #0d6efd;
+  --primary-dark: #0b5ed7;
+  --text-color: #212529;
+  --text-muted: #6c757d;
+  display: block;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: var(--text-color);
+}
+
+/* Hero Section */
+.hero-wrapper {
+  background-color: #f8f9fa;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  width: 100%;
+}
+
+.hero-content {
+  padding-right: 2rem;
+}
+
+.hero-content h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.hero-content .text-primary {
+  color: var(--primary-color) !important;
+}
+
+.hero-content .lead {
+  font-size: clamp(1rem, 3vw, 1.25rem);
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+.hero-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.hero-image::before {
+  content: '';
+  position: absolute;
+  width: min(650px, 100%);
+  height: min(650px, 100%);
+  background: linear-gradient(45deg, rgba(108, 117, 125, 0.15), rgba(108, 117, 125, 0.05));
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  z-index: 0;
+  animation: moveBlob 20s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.hero-img {
+  position: relative;
+  width: min(450px, 100%);
+  height: min(450px, 100vw);
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 
+    0 20px 40px rgba(0,0,0,0.1),
+    0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1;
+}
+
+.hero-img:hover {
+  transform: translateY(-5px);
+  box-shadow: 
+    0 25px 50px rgba(0,0,0,0.15),
+    0 10px 20px rgba(0,0,0,0.1);
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.btn-lg {
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3);
+}
+
+.btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  background-color: transparent;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3);
+}
+
+.social-links {
+  gap: 1.5rem;
+}
+
+.social-links a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+.social-links a:hover {
+  color: var(--primary-color) !important;
+}
+
+@keyframes moveBlob {
+  0%, 100% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+  25% {
+    border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%;
+  }
+  50% {
+    border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%;
+  }
+  75% {
+    border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%;
+  }
+}
+
+/* Media Queries */
+@media (max-width: 1400px) {
+  .hero-section {
+    max-width: 1140px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero-section {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-section {
+    max-width: 720px;
+  }
+
+  .hero-content {
+    text-align: center;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    max-width: 540px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    padding: 1rem;
+  }
+
+  .d-flex.gap-3 {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem !important;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+  

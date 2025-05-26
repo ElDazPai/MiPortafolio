@@ -1,0 +1,41 @@
+.footer {
+    width: 100vw;
+    padding: 1.5rem 0;
+    background-color: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+    position: relative;
+    margin-top: auto;
+    left: 0;
+    right: 0;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    text-align: center;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.copyright {
+    margin-bottom: 0.5rem;
+}
+
+.tech-stack {
+    font-size: 0.85rem;
+}
+
+.heart {
+    color: #dc3545;
+    display: inline-block;
+    animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
