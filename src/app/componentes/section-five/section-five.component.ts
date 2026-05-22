@@ -57,6 +57,15 @@ export class SectionFiveComponent {
       codeUrl: 'https://www.moontech-cv.com/',
       showAllTech: false
     },
+     {
+      title: 'BslBatt Colombia',
+      description: 'Proyecto Ecommerce de baterias de litio',
+      image: './BslBatt.jpg',
+      technologies: ['React', 'Vercel', 'Hostinger'],
+      demoUrl: '#',
+      codeUrl: 'https://www.bslbattcolombia.com/',
+      showAllTech: false
+    },
     
   ];
 
