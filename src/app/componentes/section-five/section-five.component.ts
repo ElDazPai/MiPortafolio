@@ -47,7 +47,17 @@ export class SectionFiveComponent {
       demoUrl: 'https://www.youtube.com/watch?v=nemA-yNcv_c&ab_channel=Daz',
       codeUrl: '#',
       showAllTech: false
-    }
+    },
+    {
+      title: 'MoonTech CV',
+      description: 'Proyecto de curriculum con inteligencia artificial',
+      image: './MoontechCV.jpg',
+      technologies: ['React','Python','Supabase', 'Vercel'],
+      demoUrl: '#',
+      codeUrl: 'https://www.moontech-cv.com/',
+      showAllTech: false
+    },
+    
   ];
 
   toggleTechnologies(project: Project): void {
